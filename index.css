@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', san_serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+
+}
+
+#header{
+    width: 100%;
+    height: 5vh;
+    /*background-image: url();*/
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width:140px;
+
+}
+.logo span{
+    color:#ff004f;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;  
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom :-6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text span{
+    color: #ff004f;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.image-container{
+    display: flex;
+    position: relative;
+    width: 500px;
+    float: right;
+    margin-left: 20px;
+}
+
+.side-image{
+    width: 100%;
+    height: auto;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px; 
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), #080808);
+    pointer-events: none; 
+}
+
+.image-overlay1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px; 
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #080808);
+    pointer-events: none; 
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .header-text .image-container{
+        display: none;
+    }
+
+    .header-text{
+        margin-top: 70%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+  
+
+    nav .fa-solid{
+        display: block;
+        font-size:25px;
+    }
+
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index:2;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }    
+}

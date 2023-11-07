@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/c24d1bb6b8.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+</head>
+<body>
+    <!---navbar-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div  class="logo">
+                    <h1><span>M</span>BT</h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!----info--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutCol1">
+                    <h1 class="sub-title-media">ABOUT ME</h1>
+                    <img src="IMG_8073.jpg">
+                </div>
+                <div class="aboutCol2">
+                    <h1 class="sub-title">ABOUT ME</h1>
+                    <p>
+                        I am a dedicated and motivated second-year undergraduate student pursuing a degree in computer science. My academic journey has equipped me with proficient skills in programming languages like Python and C, as well as expertise in SQL (Oracle). Fueled by a strong passion for cybersecurity and data-related fields, I have actively engaged in virtual internship experiences. These opportunities have not only helped me fine-tune my skill set but also allowed me to precisely identify and cultivate my specific interests. With a foundation in critical thinking and problem-solving, I am committed to leveraging my knowledge and enthusiasm to contribute effectively in the realm of computer science and its evolving domains.
+                    </p>
+                    <div class="tab-titles">
+                        <p class = "tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class = "tab-links" onclick="opentab('project')">Projects</p>
+                        <p class = "tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">JavaScript</button>   
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Python</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">HTML</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">CSS</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Java</button>                     
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Bootstrap</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Flask</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Test-driven development(TDD)</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Figma</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Git</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Github</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">C#</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Linux</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Trello</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Object-oriented programming (OOP)</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Microsoft 365</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Power BI</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">SQL</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Problem-solving</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Agile methodologies</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Scrum</button>
+                            <button class="resume-btn bg-gray-300 dark:bg-gray-800 px-3 py-2 rounded-lg shadow-sm bg-opacity-30">Swing</button>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="project">
+                        <ul>
+                            <li><h3>Ignite</h3> <br>
+                                Collaborated with a fast-paced team to design 
+                                and build a study tool for incoming university students using 
+                                Figma, HTML/CSS, Flask and Javascript that provided resources 
+                                for interviews and gave access to relevant books at 2023 BGN 
+                                Google Hackathon.</li>
+
+                            <li><h3><br>Automated email forwarding application</h3><br>
+                                <ul>
+                                    <li>Implemented OAuth 2.0 authentication for secure access to Gmail accounts.</li>
+                                    <li>Designed and developed a Python script that scans the user's inbox for incoming emails.</ul>
+                                    <li>Created logic to selectively forward emails based on sender email addresses.</li>
+                                    <li>Ensured error handling for smooth script operation and user-friendly error messages.</li>
+                                    <li>Improved email management and productivity by automating the forwarding of relevant messages.</li>
+                                    <li>Utilized Google's Gmail API and OAuth 2.0 flow for seamless integration with Gmail services.</li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <h3><br>Blog web Application</h3><br>
+                                <ul>
+                                    <li>Created a web application Flask (Python web framework).</li>
+                                    <li>Created a database with SQLAlchemy to store user information, posts, and information.</li>
+                                    <li>Designed and created frontend using HTML/CSS.</li>
+                                    <li>Ensured a responsive design using Bootstrap.</li>
+                                    <li>Ensured secure user login and functionality with OAuth 2.0.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3><br>E-portfolio</h3><br>
+                                I created my e-portfolio using HTML/CSS for front-end and JavaScript for back-end, as well as google sheet API for forms.
+                                This collection showcases my journey as a software engineering student, 
+                                highlighting my skills, certifications, and projects. Explore my experiences 
+                                and accomplishments, and get to know more about me, Michael Tavershima.
+                            </li>
+                                                        
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>University of Hertfordshire</span><br>
+                                BSc (Hons) Computer Science (Software Engineering)<br>                               
+                                <br><h3>1st year Modules</h3><br>
+                                Datamodeling for databases<br>
+                                From silicon to C<br>
+                                Computational problem ssolving<br>
+                                Team software project<br>
+                                Introduction to Programing and data structures<br>
+                                <br><h3>2nd year Modules</h3><br>
+                                Operating systems and networks<br>
+                                Accessibilty and Usability<br>
+                                Algorithms and data structures<br>
+                                Computing things<br>
+                                Databses<br>
+                                Principles and practices of large scale progamming<br>
+                            </li>
+                            <li><br><span>Hertfordshire International College</span><br> 
+                                Foundation in computer science<br>
+                                <br><h3>Modules</h3><br>
+                                Statistics<br>
+                                Introgramming in python<br>
+                                Mathematics<br>
+                                Calculus<br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-content")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+
+<script>
+
+    var sidemen = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemen.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemen.style.right = "-150px";
+    }
+
+</script>
+
+</body>
+</html>

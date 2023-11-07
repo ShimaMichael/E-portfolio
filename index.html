@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href = "index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/c24d1bb6b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+                    <nav>
+                        <div  class="logo">
+                            <h1><span>M</span>BT</h1>
+                        </div>
+                        <ul id="sidemenu">
+                            <li><a href="index.html"> Home</a></li>
+                            <li><a href="about.html"> About</a></li>
+                            <li><a href="contact.html"> Contact</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="header-text">
+                        <div class="image-container">
+                            <img src="background.JPG" class="side-image"> 
+                            <div class="image-overlay"></div>
+                            <div class="image-overlay1"></div>
+                        </div>
+                        <p>Software Developer</p>
+                        <h1>
+                            Hi, I'm <span>Michael Tavershima</span> <br>a 
+                            dedicated software engineering student enrolled<br> 
+                            at the esteemed University of Hertfordshire.
+                        </h1>
+                
+                    </div>
+        </div>
+    </div>
+
+       
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-content")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        
+    </script>
+
+    <script>
+
+        var sidemen = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemen.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemen.style.right = "-150px";
+        }
+
+    </script>
+
+</body>
+</html>
